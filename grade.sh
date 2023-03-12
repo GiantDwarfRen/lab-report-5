@@ -1,7 +1,7 @@
-CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
-# For mac, revise CPATH to CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+# For Windows, revise CPATH to CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
 
-rm -rf student-submission *.class *.txt ListExamples.java 2>remove-err.txt
+rm -rf student-submission *.class *.txt ListExamples.java
 
 git clone $1 student-submission 2>clone-result.txt
 if [[ $? -ne 0 ]]
@@ -38,7 +38,8 @@ TotalPoints=`wc -l < number-tests.txt`
 grep ") " exec-result.txt > failed-tests.txt
 LostPoints=`wc -l < failed-tests.txt`
 
-let EarnedPoints=$TotalPoints-$LostPoints
+let EarnedPoints=TotalPoints-LostPoints
+
 echo -e '\nScore:'
 echo -e $EarnedPoints " / " $TotalPoints
 
