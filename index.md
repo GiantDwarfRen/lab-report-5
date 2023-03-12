@@ -75,6 +75,8 @@ fi
 echo -e '\nFinished cloning'
 ```
 Clone the grading url. exit if clone fail.
+
+Also, it redirects clone message to clone-result.txt. So, instead of showing all cloning process, only "Finished clone" or "Clone Filaed" will be displayed. Much more clean and precise.
 ```
 if [[ -f student-submission/ListExamples.java ]]
 then
@@ -131,4 +133,30 @@ There are totally 10 tests cases: 9 tests and 1 extra credit assigned to student
 ![test_cases](./Images/test_cases.png)
 
 ## Different Submision Results
-1. 
+1. https://github.com/ucsd-cse15l-f22/list-methods-lab3, which has the same code as the starter from lab 3
+
+![1](./Images/1.png)
+
+2. https://github.com/ucsd-cse15l-f22/list-methods-corrected, which has the methods corrected (I would expect this to get full or near-to-full credit)
+
+![2](./Images/2.png)
+
+3. https://github.com/ucsd-cse15l-f22/list-methods-compile-error, which has a syntax error of a missing semicolon. Note that your job is not to fix this, but to decide what to do in your grader with such a submission!
+
+![3](./Images/3.png)
+
+4. https://github.com/ucsd-cse15l-f22/list-methods-signature, which has the types for the arguments of filter in the wrong order, so it doesn’t match the expected behavior.
+
+![4](./images/4.png)
+
+5. https://github.com/ucsd-cse15l-f22/list-methods-filename, which has a great implementation saved in a file with the wrong name.
+
+![5](./Images/5.png)
+
+6. https://github.com/ucsd-cse15l-f22/list-methods-nested, which has a great implementation saved in a nested directory called pa1.
+
+![6](./Images/6.png)
+
+7. Challenge https://github.com/ucsd-cse15l-f22/list-examples-subtle, which has more subtle bugs (hints: see assertSame, which compares with == rather than .equals(), and think hard about duplicates for merge)
+
+![7](./Images/7.png)
