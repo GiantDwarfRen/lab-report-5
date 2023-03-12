@@ -147,7 +147,7 @@ There are totally 10 tests cases: 9 tests and 1 extra credit assigned to student
 
 4. https://github.com/ucsd-cse15l-f22/list-methods-signature, which has the types for the arguments of filter in the wrong order, so it doesn’t match the expected behavior.
 
-![4](./images/4.png)
+![4](./Images/4.png)
 
 5. https://github.com/ucsd-cse15l-f22/list-methods-filename, which has a great implementation saved in a file with the wrong name.
 
