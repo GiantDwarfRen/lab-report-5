@@ -124,3 +124,11 @@ fi
 echo -e '\nAuto grading done\nThanks for using!'
 ```
 Format output. If student did not get full credit, report failed tests name stored in failed-tests.txt.
+
+## Test Cases
+There are totally 10 tests cases: 9 tests and 1 extra credit assigned to student for submitting homework.
+
+![test_cases](./Images/test_cases.png)
+
+## Different Submision Results
+1. 
